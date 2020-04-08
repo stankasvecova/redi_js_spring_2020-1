@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lesson_3</title>
+</head>
+<body>
+    <p class="text">How are you?</p>
+    <div class="btn-block">
+        <button id="goodBtn">Good!</button>
+        <button id="badBtn">Bad!</button>
+    </div>
+    <p id="answer"></p>
+
+    <div class="btn-block">
+        <button id="burgerBtn">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+    </div>
+<script>
+    let goodBtn =  document.getElementById("goodBtn");
+    let badBtn =  document.getElementById("badBtn");
+    let answer =  document.getElementById("answer");
+
+    function goodBtnClick (event) {
+        answer.textContent = "That's great!";
+        console.log("That's really good!!")
+    }
+
+    function badBtnClick (event) {
+        answer.textContent = "That's bad ...";
+        console.log("That's really bad..")
+    }
+
+    goodBtn.addEventListener("click", goodBtnClick);
+    badBtn.addEventListener("click", badBtnClick);
+
+    let burgerBtn =  document.getElementById("burgerBtn");
+    function burgerAction () {
+        alert ("You pressed Burger-Button!");
+        console.log ("You really pressed this button!");
+    }
+
+    burgerBtn.addEventListener("click", burgerAction);
+    
+</script>
+</body>
+</html>
