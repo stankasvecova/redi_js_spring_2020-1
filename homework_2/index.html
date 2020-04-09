@@ -9,29 +9,30 @@
     <title>Lesson_3</title>
 </head>
 <body>
-    <p class="text">How are you?</p>
     <div class="btn-block">
-        <button id="goodBtn">Good!</button>
-        <button id="badBtn">Bad!</button>
-    </div>
-    <p id="answer"></p>
-
-    <div class="btn-block">
-        <button id="burgerBtn">
+        <button class="burger-btn" id="burgerBtn">
             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </button>
     </div>
-<script>
-    let goodBtn =  document.getElementById("goodBtn");
-    let badBtn =  document.getElementById("badBtn");
-    let answer =  document.getElementById("answer");
 
-    function goodBtnClick (event) {
+    <p class="text">How are you?</p>
+    <div class="btn-block">
+        <button class="success-btn" id="goodBtn">Good!</button>
+        <button class="fail-btn" id="badBtn">Bad!</button>
+    </div>
+    <p class="answer" id="answer"></p>
+
+<script>
+    let goodBtn = document.getElementById("goodBtn");
+    let badBtn = document.getElementById("badBtn");
+    let answer = document.getElementById("answer");
+
+    function goodBtnClick() {
         answer.textContent = "That's great!";
         console.log("That's really good!!")
     }
 
-    function badBtnClick (event) {
+    function badBtnClick() {
         answer.textContent = "That's bad ...";
         console.log("That's really bad..")
     }
@@ -39,7 +40,7 @@
     goodBtn.addEventListener("click", goodBtnClick);
     badBtn.addEventListener("click", badBtnClick);
 
-    let burgerBtn =  document.getElementById("burgerBtn");
+    let burgerBtn = document.getElementById("burgerBtn");
     function burgerAction () {
         alert ("You pressed Burger-Button!");
         console.log ("You really pressed this button!");
