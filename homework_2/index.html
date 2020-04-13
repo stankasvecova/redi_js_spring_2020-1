@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,32 +22,6 @@
     </div>
     <p class="answer" id="answer"></p>
 
-<script>
-    let goodBtn = document.getElementById("goodBtn");
-    let badBtn = document.getElementById("badBtn");
-    let answer = document.getElementById("answer");
-
-    function goodBtnClick() {
-        answer.textContent = "That's great!";
-        console.log("That's really good!!")
-    }
-
-    function badBtnClick() {
-        answer.textContent = "That's bad ...";
-        console.log("That's really bad..")
-    }
-
-    goodBtn.addEventListener("click", goodBtnClick);
-    badBtn.addEventListener("click", badBtnClick);
-
-    let burgerBtn = document.getElementById("burgerBtn");
-    function burgerAction () {
-        alert ("You pressed Burger-Button!");
-        console.log ("You really pressed this button!");
-    }
-
-    burgerBtn.addEventListener("click", burgerAction);
-    
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
