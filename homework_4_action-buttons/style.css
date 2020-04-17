@@ -1,0 +1,45 @@
+.block {
+    text-align: center;
+    margin-top: 30px;
+}
+.mainButton, 
+.bonusButton, 
+.hiddenButton, 
+.tooltipButton {
+    padding: 10px 0px;
+    width: 180px;
+    border: 1px solid #037777;
+    border-radius: 5px;
+    background-color: #008b8ba6;
+    color: #2b2a2a;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.changed-color {
+    background-color: #037777;
+}
+
+.bigger {
+    width: 220px;
+}
+
+.hiddenButton {
+    background-color: #299a6194;
+    border: 1px solid #299a61;
+    display: none;
+    margin: 0 auto;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: fixed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #cacaca5c;
+    color: #3f3f3f6e;
+    font-size: 12px;
+  }
+
+
